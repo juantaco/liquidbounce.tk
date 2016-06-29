@@ -1,4 +1,4 @@
-1.10:http://www.dropbox.com/s/jq8rrman88ok0yq/Changelog_1.10.txt?dl=1
-1.9.4:http://www.dropbox.com/s/gv5ev3xl99qvbmv/Changelog_1.9.4.txt?dl=1
-1.9:http://www.dropbox.com/s/sltcgv6pjwouz0l/Changelog_1.9.txt?dl=1
-1.8.8:http://www.dropbox.com/s/ywics8149bnx1ko/Changelog_1.8.8.txt?dl=1
+1.10:https://www.dropbox.com/s/jq8rrman88ok0yq/Changelog_1.10.txt?dl=1
+1.9.4:https://www.dropbox.com/s/gv5ev3xl99qvbmv/Changelog_1.9.4.txt?dl=1
+1.9:https://www.dropbox.com/s/sltcgv6pjwouz0l/Changelog_1.9.txt?dl=1
+1.8.8:https://www.dropbox.com/s/ywics8149bnx1ko/Changelog_1.8.8.txt?dl=1
