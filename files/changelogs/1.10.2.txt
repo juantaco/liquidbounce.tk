@@ -3,3 +3,12 @@ b1:
 b2:
   + Add Ghost Hack
   + Add option to toggle the coordinate display in the hud.
+  + Add AntiAFK Hack
+  + Add AutoWalk Hack
+  * Fix InventoryMove
+  * Rename creativenuker to Nuker
+  + Add .nuker command
+  * Better nuker
+  * Fix FileList(Fix xray bugs etc)
+  + Add AutoBreak Hack
+  + Add keybind change gui. You can open the gui with middle click on a module button in the clickgui.
