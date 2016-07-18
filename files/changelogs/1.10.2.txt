@@ -12,3 +12,6 @@ b2:
   * Fix FileList(Fix xray bugs etc)
   + Add AutoBreak Hack
   + Add keybind change gui. You can open the gui with middle click on a module button in the clickgui.
+b3:
+  * Fix xray saving/loading
+  * Fix account saving/loading
