@@ -15,3 +15,13 @@ b2:
 b3:
   * Fix xray saving/loading
   * Fix account saving/loading
+b4:
+  * Better Hud module list design
+  * Fix ESP Crash
+  * Better nametags
+  * Fix Step crash
+  * Better HUD (If you enable a module fade this module in the array)
+  * Fix .aura
+  * Better performance
+  + Add option for the time display in the hud
+  * Rename LiqWalk to LiquidWalk
