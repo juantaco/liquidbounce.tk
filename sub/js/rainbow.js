@@ -2,7 +2,7 @@
 var speed=50; // speed colours change, 1 second = 1000
 var glow=50; // can be set from '0' for no glow, to 10
 var raincol=new Array("#ff0000", "#ff5500", "#ffaa00", "#ffff00", "#aaff00", "#55ff00", "#00ff00", "#00ff55", "#00ffaa", "#00ffff", "#00aaff", "#0055ff", "#0000ff", "#5500ff", "#aa00ff", "#ff00ff", "#ff00aa", "#ff0055"); // change the colours if you want to
-var alink="http://liquidbounce.tk/sub.html"; // page to link text to (set to ="" for no link)
+var alink="http://liquidbounce.tk/sub"; // page to link text to (set to ="" for no link)
 
 /****************************
 *    Rainbow Text Effect    *
