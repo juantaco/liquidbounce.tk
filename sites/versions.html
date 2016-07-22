@@ -7,45 +7,136 @@
 		<title>Versions</title>
 		<link rel="icon" href="../img/logo.png" type="image/png">
 		
-		<link href="../css/style.css" rel="stylesheet" type="text/css">
-		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+		
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+		<link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="../css/responsive.css" rel="stylesheet" type="text/css">
+		<link href="../css/animate.css" rel="stylesheet" type="text/css">
+		
+		<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+		
+		<script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/jquery-scrolltofixed.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../js/jquery.isotope.js"></script>
+		<script type="text/javascript" src="../js/wow.js"></script>
+		<script type="text/javascript" src="../js/classie.js"></script>
+		
+		<!--[if lt IE 9]>
+    		<script src="js/respond-1.1.0.min.js"></script>
+    		<script src="js/html5shiv.js"></script>
+    		<script src="js/html5element.js"></script>
+		<![endif]-->
 	</head>
 	
 	<body>
 		<nav class="main-nav-outer" id="nav"><!--main-nav-start-->
 			<div class="container">
 				<ul class="main-nav">
-					<li><a href="http://liquidbounce.tk/">Home</a></li>
+					<li class="small-logo"><a href="../index.html"><img src="../img/small-logo.png" alt=""></a></li>
 				</ul>
+				<a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
 			</div>
 		</nav><!--main-nav-end-->
 		
-		<div>
-			<header class="header" id="header">
+		<div style="overflow:hidden;">
+			<header class="header" id="header"><!--header-start-->
 				<div class="container">
 					<div style="text-align:center; width:100%">
 				    	<h1>Downloads</h1>
 				    	
 				    	<!-- 1.10/1.10.2 -->
 				    	<h4>LiquidBounce for Minecraft 1.10.2</h4>
-				    	<a href="http://adf.ly/1c0E1j">Build 1</a>
-				    	<a href="http://adf.ly/1cO1Rs">Build 2</a>
-				    	<a href="http://adf.ly/1cODQD">Build 3</a>
-				    	<a href="http://adf.ly/1cSPqC">Build 4</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1c0E1j">Build 1</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1cO1Rs">Build 2</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1cODQD">Build 3</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1cSPqC">Build 4</a>
 						
 						<!-- 1.8.8 -->
 						<h4>LiquidBounce for Minecraft 1.8.8</h4>
-						<a href="http://adf.ly/1bl3Xv">Build 1</a>
-						<a href="http://adf.ly/1cT3zy">Build 2</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1bl3Xv">Build 1</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1cT3zy">Build 2</a>
 						
 						<!-- Invis 1.8.8 -->
 						<h4>LiquidBounce for Minecraft 1.8.8 (Invis)</h4>
-						<a href="http://adf.ly/1c0Jvl">Build 1</a>
+				    	<a class="link animated fadeInUp delay-1s" href="http://adf.ly/1c0Jvl">Build 1</a>
 					</div>
 	    		</div>
-	    	</header>
+	    	</header><!--header-end-->
 		</div>
+		
+		<script type="text/javascript">
+	    	$(document).ready(function(e) {
+				$('#nav').scrollToFixed();
+				$('.res-nav_click').click(function() {
+					$('.main-nav').slideToggle();
+					return false    
+	        	});
+	    	});
+		</script>
+		
+		<script>
+			wow = new WOW({
+				animateClass: 'animated',
+				offset:       100
+			}
+			);
+			wow.init();
+		</script>
+		
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.main-nav li a').bind('click',function(event) {
+					var $anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top - 102
+					}, 1500,'easeInOutExpo');
+					event.preventDefault();
+				});
+			})
+		</script>
+		
+		<script type="text/javascript">
+			$(window).load(function() {
+				var $container = $('.portfolioContainer'),
+				$body = $('body'), colW = 375,
+		      		columns = null;
+					
+				$container.isotope({
+			    	// disable window resizing
+					resizable: true,
+					masonry: {
+					columnWidth: colW
+					}
+				});
+				
+				$(window).smartresize(function() {
+					// check if columns has changed
+					var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+					if(currentColumns !== columns) {
+						// set new column count
+						columns = currentColumns;
+						// apply width to container manually, then trigger relayout
+						$container.width( columns * colW )
+							.isotope('reLayout');
+					}
+				}).smartresize(); // trigger resize to set container width
+				
+				$('.portfolioFilter a').click(function() {
+					$('.portfolioFilter .current').removeClass('current');
+					$(this).addClass('current');
+		        
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+						filter: selector,
+					});
+					return false;
+				});
+			});
+		</script>
 	</body>
 </html>
