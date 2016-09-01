@@ -1,27 +1,35 @@
 b1:
-  + Add features etc.
+  Addeded features etc
 b2:
-  + Add Ghost Hack
-  + Add option to toggle the coordinate display in the hud.
-  + Add AntiAFK Hack
-  + Add AutoWalk Hack
-  * Fix InventoryMove
-  * Rename creativenuker to Nuker
-  + Add .nuker command
-  * Better nuker
-  * Fix FileList(Fix xray bugs etc)
-  + Add AutoBreak Hack
-  + Add keybind change gui. You can open the gui with middle click on a module button in the clickgui.
+  Added Ghost Hack
+  Added option to toggle the coordinate display in the hud.
+  Added AntiAFK Hack
+  Added AutoWalk Hack
+  Fixed InventoryMove
+  Renamed creativenuker to Nuker
+  Added .nuker command
+  Improved nuker
+  Fixed FileList(Fixed xray bugs etc)
+  Added AutoBreak Hack
+  Added keybind change gui. You can open the gui with middle click on a module button in the clickgui.
 b3:
-  * Fix xray saving/loading
-  * Fix account saving/loading
+  Fixed xray saving/loading
+  Fixed account saving/loading
 b4:
-  * Better Hud module list design
-  * Fix ESP Crash
-  * Better nametags
-  * Fix Step crash
-  * Better HUD (If you enable a module fade this module in the array)
-  * Fix .aura
-  * Better performance
-  + Add option for the time display in the hud
-  * Rename LiqWalk to LiquidWalk
+  Improved Hud module list design
+  Fixed ESP Crash
+  Improved nametags
+  Fixed Step crash
+  Improved HUD (If you enable a module fade this module in the array)
+  Fixed .aura
+  Improved performance
+  Added option for the time display in the hud
+  Renamed LiqWalk to LiquidWalk
+b5:
+  Removed AirWalk
+  Added CreativeTabs
+  Improved HUD
+  Improved Blink
+  Removed Notifications
+  Improved Attacking
+  Improved KillAura
