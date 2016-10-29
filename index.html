@@ -57,7 +57,7 @@
 						<p>LiquidBounce is a new hacked client for Minecraft.</p><p> It features many hacks and very good bypasses.</p>
 					</li>
 	        		</ul>
-	        		<a class="link animated fadeInUp delay-1s" href="#download">Get Started</a>
+					<a class="link animated fadeInUp delay-1s" href="#download">Get Started</a>
 	    		</div>
 	    	</header><!--header-end-->
 		</div>
@@ -379,6 +379,23 @@
 					});
 					return false;
 				});
+			});
+		</script>
+		
+		<script>
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html, body').animate({
+					  scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				  }
+				}
+			  });
 			});
 		</script>
 	</body>
